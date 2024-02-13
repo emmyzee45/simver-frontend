@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar";
-import hero from "../../assets/hero.svg";
+import hero from "../../assets/logo1.svg";
 
 const Hero = () => {
   return (
