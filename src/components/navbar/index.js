@@ -32,10 +32,10 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="sm:flex hidden gap-3">
-        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#723EEC] text-white">
+        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
           Create account
         </button>
-        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] border border-[#723EEC] text-[#723EEC]">
+        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] border bg-[#EF5242] text-[#EF5242]">
           Login
         </button>
       </div>
