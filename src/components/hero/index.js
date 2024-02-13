@@ -15,11 +15,14 @@ const Hero = () => {
             Lorem ipsum dolor <br className="sm:flex hidden" /> sit amet
             consectetur
           </h1>
-          <p className="sm:w-[600px] text-sm sm:text-base w-full my-4 sm:my-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
+          <p className=" text-sm sm:text-base w-full my-4 sm:my-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,{" "}
+            <br className="sm:flex hidden" />
+            sed do eiusmod tempor incididunt ut labore et dolore magna{" "}
+            <br className="sm:flex hidden" />
+            aliqua. Ut enim ad minim veniam, quis nostrud{" "}
+            <br className="sm:flex hidden" /> exercitation ullamco laboris nisi
+            ut
           </p>
           <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
             Get Started
