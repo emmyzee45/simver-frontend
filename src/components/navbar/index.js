@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+
 import { RiMenu3Line } from "react-icons/ri";
 const Navbar = () => {
   return (
     <section className="sm:px-[5%] px-[3%] flex justify-between  w-full h-[80px] items-center">
-      <div>
+      <div className="flex flex-col">
         <h4 className="text-[25px] font-semibold text-[#4B494A]">
           SIM
           <span className="text-[#EF5242]">Ver</span>
@@ -16,9 +16,26 @@ const Navbar = () => {
           carrier sim provider
         </h6>
       </div>
-      <div className="flex gap-3 items-center">
+      <div className="sm:hidden flex gap-3 items-center">
         <h6 className="text-lg font-medium uppercase">Menu</h6>
         <RiMenu3Line className="text-black text-lg" />
+      </div>
+      <nav className="sm:flex hidden">
+        <ul className="flex items-center gap-8 text-[13px]">
+          <li>Home</li>
+          <li>Feautures</li>
+          <li>Subscriptions</li>
+          <li>FAQs</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+      <div className="sm:flex hidden gap-3">
+        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
+          Create account
+        </button>
+        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] border border-[#EF5242] text-[#EF5242]">
+          Login
+        </button>
       </div>
     </section>
   );
