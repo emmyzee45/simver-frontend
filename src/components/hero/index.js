@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../navbar";
+import hero from "../../assets/hero.svg";
 
 const Hero = () => {
   return (
     <div className="w-full h-screen sm:px-[5%] px-[4%]">
       <Navbar />
-      <div className="grid sm:grid-cols-2 grid-cols-1  items-center h-[80vh]">
-        <div>
+      <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-6 items-center h-[90vh]">
+        <div className="sm:mt-0 mt-[20%]">
           <p className="sm:w-[600px] text-sm sm:text-base w-full mb-2 ">
             Welcome,
           </p>
@@ -24,8 +25,8 @@ const Hero = () => {
             Get Started
           </button>
         </div>
-        <div>
-          
+        <div className="flex justify-end">
+          <img src={hero} alt="hero" />
         </div>
       </div>
     </div>
