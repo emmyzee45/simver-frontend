@@ -24,7 +24,7 @@ const Hero = () => {
             <br className="sm:flex hidden" /> exercitation ullamco laboris nisi
             ut
           </p>
-          <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
+          <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#723EEC] text-white">
             Get Started
           </button>
         </div>

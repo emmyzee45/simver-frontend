@@ -17,7 +17,7 @@ const Navbar = () => {
         </h6>
       </div>
       <div className="sm:hidden flex gap-3 items-center">
-        <button className="px-[15px] py-[10px] rounded-[8px] sm:text-[13px] text-[10px] bg-[#EF5242] text-white">
+        <button className="px-[15px] py-[10px] rounded-[8px] sm:text-[13px] text-[10px] bg-[#723EEC] text-white">
           Create account
         </button>
         <RiMenu3Line className="text-black text-[22px]" />
@@ -32,10 +32,10 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="sm:flex hidden gap-3">
-        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
+        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#723EEC] text-white">
           Create account
         </button>
-        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] border border-[#EF5242] text-[#EF5242]">
+        <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] border border-[#723EEC] text-[#723EEC]">
           Login
         </button>
       </div>
