@@ -5,9 +5,11 @@ const Hero = () => {
   return (
     <div className="w-full h-screen sm:px-[5%] px-[4%]">
       <Navbar />
-      <div className="flex items-center h-[80vh]">
+      <div className="grid sm:grid-cols-2 grid-cols-1  items-center h-[80vh]">
         <div>
-          <p className="sm:w-[600px] text-sm sm:text-base w-full mb-2 ">Welcome,</p>
+          <p className="sm:w-[600px] text-sm sm:text-base w-full mb-2 ">
+            Welcome,
+          </p>
           <h1 className="uppercase  sm:text-[50px] text-[30px] font-bold sm:leading-[60px] leading-[40px]">
             Lorem ipsum dolor <br className="sm:flex hidden" /> sit amet
             consectetur
@@ -19,8 +21,11 @@ const Hero = () => {
             aliquip ex ea commodo consequat. Duis aute irure dolor in
           </p>
           <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
-         Get Started
+            Get Started
           </button>
+        </div>
+        <div>
+          
         </div>
       </div>
     </div>
