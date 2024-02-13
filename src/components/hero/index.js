@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="flex items-center h-[80vh]">
         <div>
           <h1 className="uppercase  sm:text-[50px] text-[30px] font-bold sm:leading-[60px] leading-[40px]">
-            Lorem ipsum <br className="flex sm:hidden" /> dolor{" "}
+            Lorem ipsum dolor{" "}
             <br className="sm:flex hidden" /> sit amet consectetur
           </h1>
           <p className="sm:w-[600px] text-sm sm:text-base w-full my-5 sm:my-10">
