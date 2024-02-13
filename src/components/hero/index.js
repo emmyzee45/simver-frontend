@@ -19,7 +19,7 @@ const Hero = () => {
             aliquip ex ea commodo consequat. Duis aute irure dolor in
           </p>
           <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
-            Create account
+         Get Started
           </button>
         </div>
       </div>
