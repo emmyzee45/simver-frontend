@@ -17,7 +17,7 @@ const Navbar = () => {
         </h6>
       </div>
       <div className="sm:hidden flex gap-3 items-center">
-        <button className="px-[15px] py-[10px] rounded-[8px] sm:text-[13px] text-[10px] bg-[#723EEC] text-white">
+        <button className="px-[15px] py-[10px] rounded-[8px] sm:text-[13px] text-[10px] bg-[#EF5242] text-white">
           Create account
         </button>
         <RiMenu3Line className="text-black text-[22px]" />
