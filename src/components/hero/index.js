@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar";
-import hero from "../../assets/logo1.svg";
+import hero from "../../assets/hero.svg";
 
 const Hero = () => {
   return (
@@ -24,7 +24,7 @@ const Hero = () => {
             <br className="sm:flex hidden" /> exercitation ullamco laboris nisi
             ut
           </p>
-          <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#723EEC] text-white">
+          <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
             Get Started
           </button>
         </div>
