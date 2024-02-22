@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../navbar";
 import hero from "../../assets/hero.svg";
+import Slider from "../brandslider";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen sm:px-[5%] px-[4%]">
+    <div className="w-full h-screen sm:px-[5%] px-[4%] overflow-x-hidden">
       <Navbar />
       <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-6 items-center h-[90vh]">
         <div className="sm:mt-0 mt-[10%]">
@@ -31,6 +32,9 @@ const Hero = () => {
         <div className="flex justify-end">
           <img src={hero} alt="hero" />
         </div>
+      </div>
+      <div className="mt-[10%]">
+        <Slider />
       </div>
     </div>
   );
