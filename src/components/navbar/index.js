@@ -3,7 +3,7 @@ import React from "react";
 import { RiMenu3Line } from "react-icons/ri";
 const Navbar = () => {
   return (
-    <section className=" flex justify-between  w-full h-[80px] border-b-[1px] border-[#723eec3f] items-center">
+    <section className=" flex justify-between  w-full h-[80px] border-b-[1px] border-[#ef534217] items-center">
       <div className="flex flex-col">
         <h4 className="text-[25px] font-semibold text-[#4B494A]">
           SIM

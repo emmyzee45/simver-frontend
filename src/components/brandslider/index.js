@@ -1,13 +1,11 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-
-
-function Sliderr() {
+function BrandSlider() {
   return (
-    <div className="App">
-      <div className="title">
-        <h1>Our Technology Partner</h1>
+    <div className="my-[10%]">
+      <div>
+        <h1 className="text-center ">Our Technology Partner</h1>
       </div>
 
       <div>
@@ -88,11 +86,10 @@ function Sliderr() {
               alt=""
             />
           </div>
-          
         </Marquee>
       </div>
     </div>
   );
 }
 
-export default Sliderr;
+export default BrandSlider;
