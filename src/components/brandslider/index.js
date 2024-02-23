@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 function BrandSlider() {
   return (
-    <div className="my-[10%]">
+    <div className="sm:my-[10%] mt-[50%]">
       <div>
         <h1 className="text-center ">Our Technology Partner</h1>
       </div>
