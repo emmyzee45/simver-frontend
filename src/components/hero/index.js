@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../navbar";
 import hero from "../../assets/hero.svg";
-import Slider from "../brandslider";
+import Sliderr from "../Slider";
 
 const Hero = () => {
   return (
@@ -34,7 +34,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-[10%]">
-        <Slider />
+    
+    <Sliderr/>
       </div>
     </div>
   );
