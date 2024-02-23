@@ -3,7 +3,7 @@ import { RiSecurePaymentFill } from "react-icons/ri";
 
 export default function WhatWeOffer() {
   return (
-    <div className="my-[5%]">
+    <div className="sm:my-[5%] my-[10%] ">
       <div>
         <h6 className="text-lg text-center text-[#EF5242] font-semibold">
           SERVICES
