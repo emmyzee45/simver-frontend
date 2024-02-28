@@ -25,7 +25,6 @@ export default function Testimonial() {
     <>
       <section>
         <div className="main">
-         
           <h4 className="font-bold text-center sm:text-[40px] text-[24px] mb-2">
             TESTIMONIAL
           </h4>
@@ -38,14 +37,14 @@ export default function Testimonial() {
             autoplay={{ delay: 3000 }}
             navigation={true}
             modules={[EffectCoverflow, Pagination, Navigation]}
-            className="mySwiper"
+            className="bg-[#EF5242] text-white"
             effect={"coverflow"}
             coverflowEffect={{
               rotate: 10,
               stretch: 50,
               depth: 200,
               modifier: 1,
-              slideShadows: true,
+              slideShadows: false,
             }}
             breakpoints={{
               640: {
