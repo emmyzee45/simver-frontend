@@ -44,7 +44,7 @@ const Accordion = ({ title, answer }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden mt-5 w-[500px]">{answer}</div>
+        <div className="overflow-hidden mt-5 w-full sm:w-[500px]">{answer}</div>
       </div>
     </div>
   );
