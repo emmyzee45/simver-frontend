@@ -38,3 +38,28 @@ mask-image: linear-gradient(
     hsl(0 0% 0% / 0)
   );
 }
+
+
+
+.swiper-pagination-bullet-active {
+  
+  background-color: #ffffff !important;
+  border: 2px solid #EF5242 !important;
+  /* padding: 1px !important; */
+  border-radius: 1px !important;
+  /* padding-left: 5px !important; */
+  width: 30px !important;
+  height: 1px !important;
+  /* padding-right: 5px !important; */
+}
+.swiper-pagination-bullet {
+ 
+  background-color: #ffffff !important;
+  border: 2px solid #EF5242 !important;
+  /* padding: 1px !important; */
+  border-radius: 1px !important;
+  /* padding-left: 5px !important; */
+  width: 30px !important;
+  height: 1px !important;
+  /* padding-right: 5px !important; */
+}
