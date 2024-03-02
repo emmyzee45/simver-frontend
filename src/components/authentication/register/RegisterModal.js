@@ -10,6 +10,7 @@ export default function RegisterModal({ visible, onClose }) {
     if (e.target.id === "container") onClose();
   };
   if (!visible) return null;
+  
   return (
     <div
       id="container"
