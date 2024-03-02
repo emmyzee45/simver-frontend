@@ -5,6 +5,8 @@ import Feauture from "../components/feauture";
 import WhatWeOffer from "../components/what-we-offer/page";
 import FAQ from "../components/accordion/Faq";
 import Testimonial from "../components/testimonial";
+import GetStarted from "../components/getStarted";
+import Footer from "../components/footer";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <WhatWeOffer/>
       <FAQ/>
       <Testimonial/>
+      <GetStarted/>
+      <Footer/>
     </div>
   );
 };
