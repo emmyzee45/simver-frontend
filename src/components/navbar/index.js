@@ -2,9 +2,12 @@ import React,{useState} from "react";
 
 import { RiMenu3Line } from "react-icons/ri";
 import LoginModal from "../authentication/login/LoginModal";
+import RegisterModal from "../authentication/register/RegisterModal";
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
   const handleClose = () => setShowModal(false);
+  const [showRegisterModal, setShowRegisterModal] = useState(false);
+  const handleRegisterClose = () => setShowRegisterModal(false);
   return (
     <section className=" w-full">
       <div className="max-w-[1440px] mx-auto sm:px-[5%] px-[4%]">
@@ -37,9 +40,15 @@ const Navbar = () => {
             </ul>
           </nav>
           <div className="sm:flex hidden gap-3">
-            <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
+            <button
+              className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white"
+              onClick={() => {
+                setShowRegisterModal(true);
+              }}
+            >
               Create account
             </button>
+            <RegisterModal onClose={handleRegisterClose} visible={showRegisterModal} />
             <button
               onClick={() => {
                 setShowModal(true);

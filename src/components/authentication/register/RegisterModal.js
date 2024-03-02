@@ -2,8 +2,8 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { RiSearch2Line } from "react-icons/ri";
-export default function LoginModal({ visible, onClose }) {
-  const handleClose = (e) => {
+export default function RegisterModal({ visible, onClose }) {
+  const handleRegisterClose = (e) => {
     if (e.target.id === "container") onClose();
   };
   if (!visible) return null;
@@ -11,7 +11,7 @@ export default function LoginModal({ visible, onClose }) {
     <div
       id="container"
       className="fixed z-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center  justify-center"
-      onClick={handleClose}
+      onClick={handleRegisterClose}
     >
       <div className="bg-white p-[2%]  w-[26%] rounded-[12px]">
         <div className="flex justify-center items-center flex-col">
@@ -31,6 +31,15 @@ export default function LoginModal({ visible, onClose }) {
         </div>
         <div className="flex space-y-6 flex-col mt-4">
           <div>
+            <label className="text-sm font-semibold">Username*</label>
+            <div className="w-full h-[40px] rounded-lg border border-black">
+              <input
+                type="text"
+                className="w-full h-full bg-transparent rounded-lg px-3 outline-none"
+              />
+            </div>
+          </div>
+          <div>
             <label className="text-sm font-semibold">Email*</label>
             <div className="w-full h-[40px] rounded-lg border border-black">
               <input
@@ -48,14 +57,13 @@ export default function LoginModal({ visible, onClose }) {
               />
             </div>
           </div>
-          
         </div>
-        <p className="text-sm font-semibold mt-5 mb-6">Forget password</p>
+        <p className="text-sm font-semibold mt-5 mb-6">Remember password</p>
         <button className="w-full bg-[#EF5242] h-[40px] rounded-lg text-white">
-          Sign in
+          Register
         </button>
         <p className="text-center text-sm mt-5">
-          Don't have an account? <span>Sign up</span>
+          Have an account already? <span>Login in</span>
         </p>
       </div>
     </div>
