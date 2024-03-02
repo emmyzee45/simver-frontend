@@ -63,3 +63,22 @@ mask-image: linear-gradient(
   height: 1px !important;
   /* padding-right: 5px !important; */
 }
+
+.single::before {
+  position: absolute;
+  content: "/";
+  left: -35px;
+  top: -35px;
+  background: #EF5242;
+  width: 126px;
+  height: 100px;
+}
+.single::after {
+  position: absolute;
+  content: "";
+  right: -35px;
+  bottom: -35px;
+  background: #EF5242;
+  width: 126px;
+  height: 100px;
+}

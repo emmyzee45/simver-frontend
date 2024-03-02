@@ -3,6 +3,8 @@ import { LuMessagesSquare } from "react-icons/lu";
 import { FcCustomerSupport } from "react-icons/fc";
 export default function Feauture() {
   return (
+    <div className="w-full bg-white">
+      <div className="max-w-[1440px] mx-auto">
     <div className="bg-[#EEEEEE] py-[5%]">
       <div className="px-[4%] sm:pl-[5%] sm:pr-[13%]">
         <div className="grid sm:grid-cols-12 grid-cols-1 items-start sm:gap-7 ">
@@ -60,6 +62,8 @@ export default function Feauture() {
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );

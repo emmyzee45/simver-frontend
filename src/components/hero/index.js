@@ -6,6 +6,8 @@ import BrandSlider from "../brandslider";
 
 const Hero = () => {
   return (
+       <div className="w-full bg-white">
+      <div className="max-w-[1440px] mx-auto">
     <div className="w-full sm:h-screen sm:px-[5%] px-[4%] ">
       <Navbar />
       <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-6 items-center h-[90vh]">
@@ -34,7 +36,8 @@ const Hero = () => {
           <img src={hero} alt="hero" />
         </div>
       </div>
-      
+      </div>
+      </div>
     </div>
   );
 };

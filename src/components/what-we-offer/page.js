@@ -3,7 +3,10 @@ import { RiSecurePaymentFill } from "react-icons/ri";
 
 export default function WhatWeOffer() {
   return (
+    <div className="w-full bg-white">
+      <div className="max-w-[1440px] mx-auto">
     <div className="sm:my-[5%] my-[10%] ">
+      
       <div>
         <h6 className="text-lg text-center text-[#EF5242] font-semibold">
           SERVICES
@@ -85,6 +88,7 @@ export default function WhatWeOffer() {
           </div>
         </div>
       </div>
+      </div></div>
     </div>
   );
 }
