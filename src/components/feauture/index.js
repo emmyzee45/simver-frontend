@@ -54,7 +54,7 @@ export default function Feauture() {
     setCurrentTab(e.target.id);
   };
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-[#EEEEEE]">
       <div className="max-w-[1440px] mx-auto">
         <div className="bg-[#EEEEEE] py-[5%]">
           <div className="px-[4%] sm:pl-[5%] sm:pr-[13%]">
@@ -67,10 +67,8 @@ export default function Feauture() {
                       id={tab.id}
                       disabled={currentTab === `${tab.id}`}
                       onClick={handleTabChange}
-                      className={`cursor-pointer flex flex-col  ${
-                        currentTab === `${tab.id}`
-                          ? "text-[#EF5242]"
-                          : ""
+                      className={`cursor-pointer w-full flex justify-center items-center flex-col  h-[150px] bg-white rounded-[6px]${
+                        currentTab === `${tab.id}` ? "text-[#EF5242]" : ""
                       }`}
                     >
                       <h3 className="text-[80px]" onClick={handleTabChange}>
