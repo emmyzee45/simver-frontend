@@ -1,8 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 import { IconContext } from "react-icons";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { RiSearch2Line } from "react-icons/ri";
+import LoginModal from "../login/LoginModal";
 export default function RegisterModal({ visible, onClose }) {
+    const [showModal, setShowModal] = useState(false);
+    const handleClose = () => setShowModal(false);
   const handleRegisterClose = (e) => {
     if (e.target.id === "container") onClose();
   };
@@ -13,7 +16,7 @@ export default function RegisterModal({ visible, onClose }) {
       className="fixed z-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center  justify-center"
       onClick={handleRegisterClose}
     >
-      <div className="bg-white sm:p-[2%] sm:py-0 py-[6%] sm:px-0 px-[3%]  sm:w-[26%] w-[90%] rounded-[12px]">
+      <div className="bg-white sm:py-[2%]  py-[6%] sm:px-[2%] px-[3%]  sm:w-[26%] w-[90%] rounded-[12px]">
         <div className="flex justify-center items-center flex-col">
           <div className="flex flex-col">
             <div className="flex flex-col items-center">
@@ -63,8 +66,16 @@ export default function RegisterModal({ visible, onClose }) {
           Register
         </button>
         <p className="text-center text-sm mt-5">
-          Have an account already? <span>Log in</span>
+          Have an account already?{" "}
+          <span
+            onClick={() => {
+              setShowModal(true);
+            }}
+          >
+            Log in
+          </span>
         </p>
+        <LoginModal onClose={handleClose} visible={showModal} />
       </div>
     </div>
   );
