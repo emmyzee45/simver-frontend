@@ -1,7 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
 
 import { RiMenu3Line } from "react-icons/ri";
+import LoginModal from "../authentication/login/LoginModal";
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
+  const handleClose = () => setShowModal(false);
   return (
     <section className=" w-full">
       <div className="max-w-[1440px] mx-auto sm:px-[5%] px-[4%]">
@@ -37,9 +40,15 @@ const Navbar = () => {
             <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] bg-[#EF5242] text-white">
               Create account
             </button>
-            <button className="px-[20px] py-[12px] rounded-[8px] text-[13px] border border-[#EF5242] text-[#EF5242]">
+            <button
+              onClick={() => {
+                setShowModal(true);
+              }}
+              className="px-[20px] py-[12px] rounded-[8px] text-[13px] border border-[#EF5242] text-[#EF5242]"
+            >
               Login
             </button>
+            <LoginModal onClose={handleClose} visible={showModal} />
           </div>
         </div>
       </div>
