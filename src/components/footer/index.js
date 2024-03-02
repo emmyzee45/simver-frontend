@@ -5,8 +5,8 @@ export default function Footer() {
     <div>
       <div className="w-full bg-black py-[4%] text-white">
         <div className="max-w-[1440px] mx-auto sm:px-[5%] px-[4%]">
-          <div className="bg-black grid grid-cols-12">
-            <div className="col-span-4">
+          <div className="bg-black grid sm:grid-cols-12 gap-7 sm:gap-0">
+            <div className="col-span-4 sm:mb-0 mb-5">
               <div className="flex flex-col">
                 <div className="flex flex-col">
                   <h4 className="text-[25px] font-semibold text-white">
@@ -59,7 +59,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="flex justify-between items-center w-full py-6 mt-12 border-t-[1px] border-b-[1px] border-gray-600">
+          <div className="flex sm:flex-row flex-col justify-between items-center w-full py-6 mt-12 border-t-[1px] border-b-[1px] border-gray-600">
             <div className="flex flex-col space-y-2">
               <h5>Subscribe to our newsletter</h5>
               <p className="text-[#ffffff77] text-sm">
@@ -67,8 +67,8 @@ export default function Footer() {
                 weekly
               </p>
             </div>
-            <div className="flex gap-3 items-center">
-              <div className="w-[350px] h-[40px] border border-gray-700 rounded-xl">
+            <div className="flex  gap-3 items-center ">
+              <div className="sm:w-[350px] w-full h-[40px] border border-gray-700 rounded-xl">
                 <input
                   type="text"
                   className="w-full h-full bg-transparent outline-none rounded-xl"
@@ -79,11 +79,11 @@ export default function Footer() {
               </button>
             </div>
           </div>
-          <div className="flex justify-between  items-center my-5">
+          <div className="flex justify-between sm:flex-row flex-col  items-center my-5">
             <h6 className="text-sm  text-gray-600 font-semibold">
               © 2024 Simver,Inc. All rights reserved.
             </h6>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 sm:mt-0 mt-3 items-center">
               <div className="w-[40px] h-[40px] rounded-full bg-gray-600 flex justify-center items-center">
                 <FaTwitter />
               </div>
