@@ -67,18 +67,28 @@ export default function Footer() {
                 weekly
               </p>
             </div>
-            <div className=" ">
-              <div className="flex sm:flex-row flex-col   gap-3 items-center ">
-                <div className="sm:w-[350px] w-full h-[40px] border border-gray-700 rounded-xl">
-                  <input
-                    type="text"
-                    className="w-full h-full bg-transparent outline-none rounded-xl"
-                  />
-                </div>
-                <button className="px-[20px] h-[40px] rounded-[8px] text-[13px] text-white bg-[#EF5242] text-center ">
-                  Subscribe
-                </button>
+
+            <div className="sm:flex hidden   gap-3 items-center ">
+              <div className="sm:w-[350px] w-full h-[40px] border border-gray-700 rounded-xl">
+                <input
+                  type="text"
+                  className="w-full h-full bg-transparent outline-none rounded-xl"
+                />
               </div>
+              <button className="px-[20px] h-[40px] rounded-[8px] text-[13px] text-white bg-[#EF5242] text-center ">
+                Subscribe
+              </button>
+            </div>
+            <div className="sm:hidden flex w-full my-3   gap-3 items-center ">
+              <div className="sm:w-[350px] w-full h-[40px] border border-gray-700 rounded-xl">
+                <input
+                  type="text"
+                  className="w-full h-full bg-transparent outline-none rounded-xl"
+                />
+              </div>
+              <button className="px-[20px] h-[40px] rounded-[8px] text-[13px] text-white bg-[#EF5242] text-center ">
+                Subscribe
+              </button>
             </div>
           </div>
           <div className="flex justify-between sm:flex-row flex-col  items-center my-5">
