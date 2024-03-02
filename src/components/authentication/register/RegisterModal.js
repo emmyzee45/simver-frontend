@@ -13,7 +13,7 @@ export default function RegisterModal({ visible, onClose }) {
       className="fixed z-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center  justify-center"
       onClick={handleRegisterClose}
     >
-      <div className="bg-white p-[2%]  w-[26%] rounded-[12px]">
+      <div className="bg-white sm:p-[2%] sm:py-0 py-[6%] sm:px-0 px-[3%]  sm:w-[26%] w-[90%] rounded-[12px]">
         <div className="flex justify-center items-center flex-col">
           <div className="flex flex-col">
             <div className="flex flex-col items-center">
@@ -63,7 +63,7 @@ export default function RegisterModal({ visible, onClose }) {
           Register
         </button>
         <p className="text-center text-sm mt-5">
-          Have an account already? <span>Login in</span>
+          Have an account already? <span>Log in</span>
         </p>
       </div>
     </div>
