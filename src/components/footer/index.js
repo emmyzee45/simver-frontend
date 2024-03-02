@@ -72,7 +72,8 @@ export default function Footer() {
               <div className="sm:w-[350px] w-full h-[40px] border border-gray-700 rounded-xl">
                 <input
                   type="text"
-                  className="w-full h-full bg-transparent outline-none rounded-xl"
+                  className="w-full px-3 h-full bg-transparent outline-none rounded-xl"
+                  placeholder="Enter your email"
                 />
               </div>
               <button className="px-[20px] h-[40px] rounded-[8px] text-[13px] text-white bg-[#EF5242] text-center ">
@@ -83,7 +84,8 @@ export default function Footer() {
               <div className="sm:w-[350px] w-full h-[40px] border border-gray-700 rounded-xl">
                 <input
                   type="text"
-                  className="w-full h-full bg-transparent outline-none rounded-xl"
+                  className="w-full px-3 h-full bg-transparent outline-none rounded-xl"
+                  placeholder="Enter your email"
                 />
               </div>
               <button className="px-[20px] h-[40px] rounded-[8px] text-[13px] text-white bg-[#EF5242] text-center ">

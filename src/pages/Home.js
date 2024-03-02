@@ -7,18 +7,21 @@ import FAQ from "../components/accordion/Faq";
 import Testimonial from "../components/testimonial";
 import GetStarted from "../components/getStarted";
 import Footer from "../components/footer";
+import Layout from "../components/layout/Layout";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <BrandSlider/>
-      <Feauture/>
-      <WhatWeOffer/>
-      <FAQ/>
-      <Testimonial/>
-      <GetStarted/>
-      <Footer/>
+      <Layout>
+      
+        <Hero />
+        <BrandSlider />
+        <Feauture />
+        <WhatWeOffer />
+        <FAQ />
+        <Testimonial />
+        <GetStarted />
+      </Layout>
     </div>
   );
 };

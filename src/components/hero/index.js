@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="w-full bg-white">
       <div className="max-w-[1440px] mx-auto">
         <div className="w-full sm:h-screen sm:px-[5%] px-[4%] ">
-          <Navbar />
+   
           <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-6 items-center h-[90vh]">
             <div className="sm:mt-0 mt-[10%]">
               <p className="sm:w-[600px] text-sm sm:text-base w-full mb-2 ">
