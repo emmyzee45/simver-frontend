@@ -1,11 +1,12 @@
 
 import './App.css';
-import Home from './pages/Home';
+import Routess from './Route';
+
 
 function App() {
   return (
     <div className=''>
-      <Home/>
+   <Routess/>
       
     </div>
   );
