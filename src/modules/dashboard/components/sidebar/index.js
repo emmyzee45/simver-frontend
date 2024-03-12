@@ -47,18 +47,18 @@ const bottomMenuItems = [
     list: [
       {
         title: "API",
-        path: "/credits",
+        path: "/api",
         icon: <MdDashboard />,
       },
 
       {
         title: "Labs",
-        path: "latest-messages",
+        path: "labs",
         icon: <MdShoppingBag />,
       },
       {
         title: "Profile",
-        path: "/superadmin/series",
+        path: "/profile",
         icon: <MdWork />,
       },
    

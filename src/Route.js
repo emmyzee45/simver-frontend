@@ -9,7 +9,7 @@ function Routess() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/dashboard" exact element={<Dashboardd />} />
+          <Route path="/credits" exact element={<Dashboardd />} />
         </Routes>
       </Router>
     </div>
