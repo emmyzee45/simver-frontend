@@ -10,9 +10,9 @@ export default function Header() {
       <div>
         <h4> {pathname.split("/").pop()}</h4>
       </div>
-      <div className="flex items-center space-x-6">
-        <div className="flex items-center space-x-3">
-          <div className="w-[40px] h-[40px] rounded-full bg-[#EF5242] flex justify-center items-center">
+      <div className="flex items-center space-x-3 sm:space-x-6">
+        <div className="flex items-center space-x-1 sm:space-x-3">
+          <div className="sm:w-[40px] w-[30px] h-[30px] sm:h-[40px] rounded-full bg-[#EF5242] flex justify-center items-center">
             <AiOutlineDollar className="text-[20px] text-white" />
           </div>
           <h5 className="font-semibold">0.00</h5>

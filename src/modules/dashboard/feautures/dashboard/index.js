@@ -3,18 +3,22 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 import { FaCircleInfo } from "react-icons/fa6";
 import { FaBitcoin } from "react-icons/fa";
 import { SiLitecoin } from "react-icons/si";
+import { FaEthereum } from "react-icons/fa";
+import { AiFillDollarCircle } from "react-icons/ai";
+import { FaMonero } from "react-icons/fa";
+import { TbBrandTether } from "react-icons/tb";
 export default function Dashboardd() {
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto">
       <DashboardLayout>
-        <div className=" sm:px-[8%] px-[4%] pt-[2.5%]">
+        <div className=" sm:px-[8%] px-[4%] sm:pt-[2.5%] pt-[4%]">
           <div className="w-full sm:h-[70px] h-[90px] bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
             <div className="flex items-start">
               <div className="w-[3%]">
                 <FaCircleInfo className="text-[#EF5242]" />
               </div>
               <div className="w-[97%]">
-                <div className="sm:text-sm  text-xs text-[#EF5242]">
+                <div className="sm:text-xs  text-xs text-[#EF5242]">
                   We are happy to announce the next phase of our rentals and
                   verification merge! All legacy API endpoints will be
                   deprecated on March 31, 2024. New API docs for verifications
@@ -70,13 +74,43 @@ export default function Dashboardd() {
               </div>
             </div>
             <div className="flex justify-between items-center space-x-5 my-5">
-              <button className="w-full h-[45px] rounded-[6px] border border-gray-300"></button>
-              <button className="w-full h-[45px] rounded-[6px] border border-gray-300"></button>
-              <button className="w-full h-[45px] rounded-[6px] border border-gray-300"></button>
+              <button className="w-full h-[45px] rounded-[6px] border border-gray-300 flex justify-center items-center">
+                <div className="flex flex- items-center space-x-2">
+                  <FaEthereum className="text-[30px] text-[#F7931A]" />
+                  <h5 className="text-[15px]">Ethereum</h5>
+                </div>
+              </button>
+              <button className="w-full h-[45px] rounded-[6px] border border-gray-300 flex justify-center items-center">
+                <div className="flex flex- items-center space-x-2">
+                  <AiFillDollarCircle className="text-[30px] text-[#3E73C4]" />
+                  <h5 className="text-[15px]">USD coin</h5>
+                </div>
+              </button>
+              <button className="w-full h-[45px] rounded-[6px] border border-gray-300 flex justify-center items-center">
+                <div className="flex flex- items-center space-x-2">
+                  <FaMonero className="text-[30px] text-[#FF6600]" />
+                  <h5 className="text-[15px]">Monero</h5>
+                </div>
+              </button>
             </div>
             <div className="flex justify-between items-center space-x-5 ">
-              <button className="w-full h-[45px] rounded-[6px] border border-gray-300"></button>
-              <button className="w-full h-[45px] rounded-[6px] border border-gray-300"></button>
+              <button className="w-full h-[45px] rounded-[6px] border border-gray-300 flex justify-center items-center">
+                <div className="flex flex- items-center space-x-2">
+                  <div className="flex justify-center items-center w-[30px] h-[30px] rounded-full bg-[#26A17B]">
+                    <TbBrandTether className=" text-white" />
+                  </div>
+                  <h5 className="text-[15px]">Tether ERCC20</h5>
+                </div>
+              </button>
+              <button className="w-full h-[45px] rounded-[6px] border border-gray-300 flex justify-center items-center">
+                <div className="flex flex- items-center space-x-2">
+                  <div className="flex justify-center items-center w-[30px] h-[30px] rounded-full bg-[#26A17B]">
+                    <TbBrandTether className=" text-white" />
+                  </div>
+
+                  <h5 className="text-[15px]">Tether TRC220</h5>
+                </div>
+              </button>
             </div>
           </div>
         </div>
