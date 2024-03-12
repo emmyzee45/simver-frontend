@@ -2,13 +2,17 @@ import React from "react";
 import { AiOutlineDollar } from "react-icons/ai";
 import { TfiAnnouncement } from "react-icons/tfi";
 import { FaUserCircle } from "react-icons/fa";
+import {HiMenuAlt4} from "react-icons/hi";
 
 export default function Header() {
   const pathname = window.location.pathname;
   return (
     <div className="h-[10vh] border-b-[1px] border-[#ef534217] w-full flex justify-between items-center px-5">
-      <div>
+      <div className="sm:flex hidden">
         <h4> {pathname.split("/").pop()}</h4>
+      </div>
+      <div className="sm:hidden flex bg-[#EF5242] text-white p-2 rounded-[8px]">
+        <HiMenuAlt4  />
       </div>
       <div className="flex items-center space-x-3 sm:space-x-6">
         <div className="flex items-center space-x-1 sm:space-x-3">

@@ -11,9 +11,9 @@ export default function Dashboardd() {
   return (
     <div className="max-w-[1440px] mx-auto">
       <DashboardLayout>
-        <div className=" sm:px-[8%] px-[4%] sm:pt-[2.5%] pt-[4%]">
+        <div className=" sm:px-[8%] px-[4%] sm:pt-[2.5%] pt-[7%]">
           <div className="w-full sm:h-[70px] h-[90px] bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
-            <div className="flex items-start">
+            <div className="flex space-x-3 items-start">
               <div className="w-[3%]">
                 <FaCircleInfo className="text-[#EF5242]" />
               </div>
@@ -30,7 +30,7 @@ export default function Dashboardd() {
           </div>
         </div>
         <div className="sm:px-[8%] px-[4%] mt-[1.5%]">
-          <h4 className="text-3xl font-semibold">Purchase Options</h4>
+          <h4 className="sm:text-3xl text-lg font-semibold">Purchase Options</h4>
           <div>
             <div className="flex justify-center items-center mt-8">
               <div className="flex flex-col items-center ">
