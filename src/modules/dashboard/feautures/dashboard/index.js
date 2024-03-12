@@ -12,7 +12,7 @@ export default function Dashboardd() {
     <div className="max-w-[1440px] mx-auto">
       <DashboardLayout>
         <div className=" sm:px-[8%] px-[4%] sm:pt-[2.5%] pt-[7%]">
-          <div className="w-full sm:h-[70px] h-[90px] bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
+          <div className="w-full py-[2%]  bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
             <div className="flex space-x-3 items-start">
               <div className="w-[3%]">
                 <FaCircleInfo className="text-[#EF5242]" />
