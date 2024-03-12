@@ -23,8 +23,8 @@ const menuItems = [
       },
 
       {
-        title: "Latest messages",
-        path: "latest-messages",
+        title: "Rentals",
+        path: "rentals",
         icon: <MdShoppingBag />,
       },
       {
