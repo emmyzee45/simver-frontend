@@ -7,14 +7,14 @@ export default function Dashboardd() {
   return (
     <div>
       <DashboardLayout>
-        <div className=" px-[8%] pt-[2.5%]">
-          <div className="w-full h-[70px] bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
+        <div className=" sm:px-[8%] px-[4%] pt-[2.5%]">
+          <div className="w-full sm:h-[70px] h-[90px] bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
             <div className="flex items-start">
               <div className="w-[3%]">
                 <FaCircleInfo className="text-[#EF5242]" />
               </div>
               <div className="w-[97%]">
-                <div className="text-sm text-[#EF5242]">
+                <div className="sm:text-sm  text-xs text-[#EF5242]">
                   We are happy to announce the next phase of our rentals and
                   verification merge! All legacy API endpoints will be
                   deprecated on March 31, 2024. New API docs for verifications
@@ -25,7 +25,7 @@ export default function Dashboardd() {
             </div>
           </div>
         </div>
-        <div className="px-[8%] mt-[1.5%]">
+        <div className="sm:px-[8%] px-[4%] mt-[1.5%]">
           <h4 className="text-3xl font-semibold">Purchase Options</h4>
           <div>
             <div className="flex justify-center items-center mt-8">
