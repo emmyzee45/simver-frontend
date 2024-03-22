@@ -12,7 +12,7 @@ const MenuLink = ({ item }) => {
       }`}
     >
       {item.icon}
-      <h5 className="text-xs">{item.title}</h5>
+      <h5 className="text-sm">{item.title}</h5>
     </Link>
   );
 };

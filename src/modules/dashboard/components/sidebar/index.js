@@ -24,7 +24,7 @@ const menuItems = [
 
       {
         title: "Rentals",
-        path: "rentals",
+        path: "/lines",
         icon: <MdShoppingBag />,
       },
       {
