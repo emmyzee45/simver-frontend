@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="h-[10vh] border-b-[1px] border-[#ef534217] w-full flex justify-between items-center sm:px-[3%] px-5">
       <div className="sm:flex hidden">
-        <h4> {pathname.split("/").pop()}</h4>
+        <h4 className="text-xl font-bold capitalize"> {pathname.split("/").pop()}</h4>
       </div>
       <div className="sm:hidden flex bg-[#EF5242] text-white p-2 rounded-[8px]">
         <HiMenuAlt4  />

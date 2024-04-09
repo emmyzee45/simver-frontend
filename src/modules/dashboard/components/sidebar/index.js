@@ -29,7 +29,7 @@ const menuItems = [
       },
       {
         title: "Verificatiions",
-        path: "/superadmin/series",
+        path: "/verifications",
         icon: <MdWork />,
       },
       {
