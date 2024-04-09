@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import ActiveRentals from "./activerentals";
 import OverdueRental from "./overduerentals/page";
+import RentalBackOrders from "./rentalbackorders";
+import RentalsHistory from "./rentalshistory";
+import BillingCycles from "./billingcycles";
+import BillingCycleHIstory from "./billingcyclehistory";
 
 
 const RentalTabs = () => {
@@ -23,25 +27,25 @@ const RentalTabs = () => {
       id: 3,
       tabTitle: "Rental Backorders",
       title: "Rental Backorders",
-      content: "1",
+      content: <RentalBackOrders/>,
     },
     {
       id: 4,
       tabTitle: "Rentals History",
       title: "Rentals History",
-      content: "1",
+      content: <RentalsHistory/>,
     },
     {
       id: 5,
       tabTitle: "Billing Cycles",
       title: "Billing Cycles",
-      content: "1",
+      content: <BillingCycles/>,
     },
     {
       id: 6,
       tabTitle: "Billing Cycles History",
       title: "Billing Cycles History",
-      content: "1",
+      content: <BillingCycleHIstory/>,
     },
   ];
 

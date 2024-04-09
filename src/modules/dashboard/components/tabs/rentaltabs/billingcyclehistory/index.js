@@ -1,18 +1,19 @@
-import React from "react";
-import CReateRental from "../../../createrental";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { IconContext } from "react-icons";
+import React from 'react'
+import CReateRental from '../../../createrental';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
-export default function OverdueRental() {
+export default function BillingCycleHIstory() {
   return (
     <div>
       <div>
-        <h4 className="text-2xl font-semibold text-black ">Overdue Rentals</h4>
+        <h4 className="text-2xl font-semibold text-black ">
+          Billing Cycles History
+        </h4>
       </div>
       <div className="flex justify-between items-center mt-1">
         <h5 className="text-gray-700">
-          View numbers with expired rental periods - the lines will be deleted
-          if not renewed within 72 hours.
+          Access historical records for your previous expired billing cycles.
         </h5>
         <div className="text-gray-700 flex justify-between items-center border rounded-[6px] border-gray-700">
           <IconContext.Provider value={{ size: "16px" }}>
@@ -34,12 +35,9 @@ export default function OverdueRental() {
       <div className="mt-[3%]">
         <table className="text-gray-700 w-full ">
           <tr className="border ">
-            <th className="py-2">Messages</th>
-            <th>Services</th>
-            <th>Number</th>
-            <th>Renew</th>
-            <th>Time Left</th>
-            <th>Notes</th>
+            <th className="py-2">NIckname</th>
+            <th>Purchased</th>
+            <th>Expired At</th>
             <th>Actions</th>
           </tr>
         </table>
