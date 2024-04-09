@@ -7,7 +7,7 @@ import {HiMenuAlt4} from "react-icons/hi";
 export default function Header() {
   const pathname = window.location.pathname;
   return (
-    <div className="h-[10vh] border-b-[1px] border-[#ef534217] w-full flex justify-between items-center px-5">
+    <div className="h-[10vh] border-b-[1px] border-[#ef534217] w-full flex justify-between items-center sm:px-[3%] px-5">
       <div className="sm:flex hidden">
         <h4> {pathname.split("/").pop()}</h4>
       </div>

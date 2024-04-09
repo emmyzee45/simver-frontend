@@ -1,42 +1,24 @@
 import React, { useState } from "react";
-import General from "./general";
-import APISettings from "./apisettings";
+import Open from "./open";
 
 
-const SettingsTabs = () => {
+const SupportTabs = () => {
   const [currentTab, setCurrentTab] = useState("1");
 
   const tabs = [
     {
       id: 1,
-      tabTitle: "General",
-      title: "General",
-      content: <General/>,
+      tabTitle: "Open",
+      title: "Open",
+      content: <Open/>,
     },
     {
       id: 2,
-      tabTitle: "API Settings",
-      title: "API Settings",
-      content: <APISettings/>,
+      tabTitle: "Closed",
+      title: "Closed",
+      content: "2",
     },
-    {
-      id: 3,
-      tabTitle: "API Webhooks",
-      title: "API Webhooks",
-      content: "1",
-    },
-    {
-      id: 4,
-      tabTitle: "Notifications",
-      title: "Notifications",
-      content: "1",
-    },
-    {
-      id: 5,
-      tabTitle: "Invoicing",
-      title: "Invoicing",
-      content: "1",
-    }
+    
   ];
 
   const handleTabChange = (e) => {
@@ -73,4 +55,4 @@ const SettingsTabs = () => {
   );
 };
 
-export default SettingsTabs;
+export default SupportTabs;

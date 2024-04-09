@@ -34,7 +34,7 @@ const menuItems = [
       },
       {
         title: "Support",
-        path: "/superadmin/short-films",
+        path: "/support",
         icon: <MdAnalytics />,
       },
     ],
