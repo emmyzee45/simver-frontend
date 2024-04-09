@@ -1,48 +1,41 @@
 import React, { useState } from "react";
-import ActiveRentals from "./activerentals";
-import OverdueRental from "./overduerentals/page";
+import General from "./general";
 
 
-const RentalTabs = () => {
+const SettingsTabs = () => {
   const [currentTab, setCurrentTab] = useState("1");
 
   const tabs = [
     {
       id: 1,
-      tabTitle: "Active Rentals",
-      title: "Active Rentals",
-      content: <ActiveRentals/>,
+      tabTitle: "General",
+      title: "General",
+      content: <General/>,
     },
     {
       id: 2,
-      tabTitle: "Overdue Rentals",
-      title: "Overdue Rentals",
-      content: <OverdueRental/>,
+      tabTitle: "API Settings",
+      title: "API Settings",
+      content: "2",
     },
     {
       id: 3,
-      tabTitle: "Rental Backorders",
-      title: "Rental Backorders",
+      tabTitle: "API Webhooks",
+      title: "API Webhooks",
       content: "1",
     },
     {
       id: 4,
-      tabTitle: "Rentals History",
-      title: "Rentals History",
+      tabTitle: "Notifications",
+      title: "Notifications",
       content: "1",
     },
     {
       id: 5,
-      tabTitle: "Billing Cycles",
-      title: "Billing Cycles",
+      tabTitle: "Invoicing",
+      title: "Invoicing",
       content: "1",
-    },
-    {
-      id: 6,
-      tabTitle: "Billing Cycles History",
-      title: "Billing Cycles History",
-      content: "1",
-    },
+    }
   ];
 
   const handleTabChange = (e) => {
@@ -59,7 +52,9 @@ const RentalTabs = () => {
             disabled={currentTab === `${tab.id}`}
             onClick={handleTabChange}
             className={`cursor-pointer text-sm font-medium  font-poppins ${
-              currentTab === `${tab.id}` ? "text-[#EF5242] border-b-[2px] border-[#EF5242]" : "text-gray-700"
+              currentTab === `${tab.id}`
+                ? "text-[#EF5242] border-b-[2px] border-[#EF5242]"
+                : "text-gray-700"
             }`}
           >
             {tab.tabTitle}
@@ -77,4 +72,4 @@ const RentalTabs = () => {
   );
 };
 
-export default RentalTabs;
+export default SettingsTabs;

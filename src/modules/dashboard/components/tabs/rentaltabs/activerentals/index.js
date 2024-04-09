@@ -2,6 +2,7 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { RxCaretDown } from "react-icons/rx";
+import CReateRental from "../../../createrental";
 
 function ActiveRentals() {
   return (
@@ -43,10 +44,9 @@ function ActiveRentals() {
         <button className="py-2 px-5 border border-[#EF5242] text-[#EF5242] rounded-[6px] text-sm">
           Reset
         </button>
-        <button>Show unread messages</button>
+        <button className="text-[#EF5242]">Show unread messages</button>
       </div>
       <div className="mt-[3%]">
-
         <table className="text-gray-700 w-full ">
           <tr className="border ">
             <th className="py-2">Messages</th>
@@ -59,6 +59,7 @@ function ActiveRentals() {
           </tr>
         </table>
       </div>
+      <CReateRental />
     </div>
   );
 }

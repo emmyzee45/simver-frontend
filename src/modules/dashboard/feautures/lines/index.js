@@ -5,7 +5,7 @@ import RentalTabs from '../../components/tabs/rentaltabs/RentalTabs';
 
 function Lines() {
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto">
       <DashboardLayout>
         <div className=" sm:px-[8%] px-[4%] sm:pt-[2.5%] pt-[7%]">
           <div className="w-full py-[2%]  bg-[#ef534238] rounded-[6px] flex items-center justify-center px-[2%]">
@@ -30,7 +30,7 @@ function Lines() {
               Purchase New Rental
             </button>
           </div>
-          <div className='mt-[3%]'>
+          <div className="mt-[3%]">
             <RentalTabs />
           </div>
         </div>
